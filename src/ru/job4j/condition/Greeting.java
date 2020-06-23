@@ -6,7 +6,5 @@ public class Greeting {
         int year = 2020;
         System.out.println(idea + " " + "But I am a newbie." + " " + year);
 
-
-
     }
 }
