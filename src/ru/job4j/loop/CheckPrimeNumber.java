@@ -14,6 +14,7 @@ public class CheckPrimeNumber {
             }
         }
         return  f;
+
     }
 
     public static void main(String[] args) {
