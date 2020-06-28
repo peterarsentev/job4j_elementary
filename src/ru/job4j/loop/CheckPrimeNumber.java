@@ -4,7 +4,7 @@ public class CheckPrimeNumber {
 
     public static boolean check(int number) {
         boolean f = true;
-        if (number <= 2) {
+        if (number < 2) {
             return false;
         }
         for (int index = 2; index < number; index++) {
