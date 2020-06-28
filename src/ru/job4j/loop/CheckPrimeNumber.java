@@ -12,7 +12,6 @@ public class CheckPrimeNumber {
                 f = false;
                 break;
             }
-
         }
         return  f;
     }
