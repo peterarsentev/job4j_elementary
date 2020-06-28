@@ -1,6 +1,6 @@
 package ru.job4j.loop;
 
-public class PrimrNumber {
+public class PrimeNumber {
     public static int calc(int finish) {
         int count = 0;
         for (int number = 1; number <= finish; number++) {
@@ -13,6 +13,6 @@ public class PrimrNumber {
 
 
     public static void main(String[] args) {
-        System.out.println(PrimrNumber.calc(11));
+        System.out.println(PrimeNumber.calc(11));
     }
 }
