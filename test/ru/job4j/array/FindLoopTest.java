@@ -14,4 +14,13 @@ public class FindLoopTest {
         int expect = 0;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenArrayHas3Thennun() {
+        int value = 3;
+        int[] data = {5, 7, 0, 4};
+        int result = FindLoop.indexOf(data, value);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
 }
