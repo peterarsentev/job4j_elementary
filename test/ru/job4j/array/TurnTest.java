@@ -8,18 +8,21 @@ import static org.junit.Assert.*;
 public class TurnTest {
 
     @Test
-    public void whenback0to5() {
-        int[] input = {1, 2, 3, 4, 5, 6};
-        int[] expect = {6, 5, 4, 3, 2, 1};
-        int[] rsl = Turn.back(input);
-        assertThat(rsl, is(expect));
+    public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
+        Turn turner = new Turn();
+        int[] input = new int[] {4, 1, 6, 2};
+        int[] result = turner.back(input);
+        int[] expect = new int[] {2, 6, 1, 4};
+        assertThat(result, is(expect));
     }
 
     @Test
-    public void whenback0to6() {
+    public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
+        Turn flipner = new Turn();
         int[] input = {1, 2, 3, 4, 5, 6, 7};
         int[] expect = {7, 6, 5, 4, 3, 2, 1};
-        int[] rsl = Turn.back(input);
+        int[] rsl = flipner.back(input);
         assertThat(rsl, is(expect));
     }
+
 }
