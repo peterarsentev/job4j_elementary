@@ -1,6 +1,8 @@
 package ru.job4j.array;
 
+@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class SwitchArray {
+
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
         array[0] = array[array.length - 1];
