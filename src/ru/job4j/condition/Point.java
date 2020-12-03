@@ -7,10 +7,10 @@ import java.io.InputStreamReader;
 public class Point {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int x1 = reader.read();
-        int x2 = reader.read();
-        int y1 = reader.read();
-        int y2 = reader.read();
+        int x1 = Integer.parseInt(reader.readLine());
+        int x2 = Integer.parseInt(reader.readLine());
+        int y1 = Integer.parseInt(reader.readLine());
+        int y2 = Integer.parseInt(reader.readLine());
        distance(x1, y1 , x2, y2);
 
     }
