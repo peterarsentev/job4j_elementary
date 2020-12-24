@@ -10,7 +10,7 @@ public class SqAreaTest {
         int expected = 2;
         int p = 6;
         int k = 2;
-        double out = ru.job4j.condition.SqArea.square(p, k);
+        double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -19,7 +19,7 @@ public class SqAreaTest {
         int expected = 4;
         int p = 12;
         int k = 4;
-        double out = ru.job4j.condition.SqArea.square(p, k);
+        double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
