@@ -18,11 +18,11 @@ public class Point {
     }
 
     public static void main(String[] args) {
-
         double result1 = Point.distance(1, 3, 5, 6);
         double result2 = Point.distance(7, 4, 4, 9);
-        System.out.println("result (0, 0) to (2, 0) " + result1);
-        System.out.println("result (0, 0) to (2, 0) " + result2);
-
+        double result3 = Point.distance(10, 16, 25, 8);
+        System.out.println("result (, 3) to (5, 6) " + result1);
+        System.out.println("result (7, 4) to (4, 9) " + result2);
+        System.out.println("result (10, 16) to (25, 8) " + result3);
     }
 }
