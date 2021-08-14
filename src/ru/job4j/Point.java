@@ -12,10 +12,12 @@ public class Point {
 
     public static void main(String[] args) {
         double result1 = Point.distance(0, 0, 2, 0);
-        double result2 = Point.distance(11, 21, 29, 32);
+        double result2 = Point.distance(11, 14, 21, 14);
         double result3 = Point.distance(0, 8, 0, 28);
+        double result4 = Point.distance(8, 3, 10, 21);
         System.out.println("result (0, 0) to (2, 0) " + result1);
-        System.out.println("result (11, 21) to (29, 32) " + result2);
+        System.out.println("result (11, 14) to (21, 14) " + result2);
         System.out.println("result (0, 8) to (0, 28) " + result3);
+        System.out.println("result (8, 3) to (10, 21) " + result4);
     }
 }
