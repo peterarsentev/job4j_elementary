@@ -40,7 +40,7 @@ public class PointTest {
 
         @Test
         public void when83to1021then18() {
-            double expected = 18.110770276274835;
+            double expected = 18.11;
             int x1 = 8;
             int y1 = 3;
             int x2 = 10;
