@@ -2,8 +2,14 @@ package ru.job4j.conditional;
 
 public class Game {
     public static void menu(String name) {
-        if (name.equals("tanks")) { /* Сравнить переменную name с "tanks" */
-            System.out.println("Start - tanks");
+        if (name.equals("super mario")) {
+            System.out.println("Start - super mario");
+        }
+            if (name.equals("tanks")) {
+                System.out.println("Start - tanks");
+            }
+                if (name.equals("tetris")) {
+                    System.out.println("Start - tetris");
         }
     }
 
