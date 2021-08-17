@@ -18,25 +18,25 @@ public class LogicNot {
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return !isEven(num) && isPositive(num);
+        return notEven(num) && isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return isEven(num) || !isPositive(num);
+        return isEven(num) || notPositive(num);
     }
 
     public static void main(String[] args) {
         boolean x = LogicNot.isEven(21);
-        System.out.println(x);
+        System.out.println("Число 21 чётное - " + x);
         x = LogicNot.isPositive(21);
-        System.out.println(x);
+        System.out.println("положительное - " + x);
         x = LogicNot.notEven(21);
-        System.out.println(x);
+        System.out.println("нечётное - " + x);
         x = LogicNot.notPositive(21);
-        System.out.println(x);
+        System.out.println("отрицательное - " + x);
         x = LogicNot.notEvenAndPositive(21);
-        System.out.println(x);
+        System.out.println("нечётное и положительное - " + x);
         x = LogicNot.evenOrNotPositive(21);
-        System.out.println(x);
+        System.out.println("чётное или отрицательное - " + x);
     }
 }
