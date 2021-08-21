@@ -1,24 +1,10 @@
 package ru.job4j.condition;
 
 public class Point {
-    public static int minus(int a, int b) {
-        int rsl = a - b;
-        return rsl;
-    }
 
-    public static double plus(double a, double b) {
-        double rsl = a + b;
-        return rsl;
-    }
 
     public static double distance(int x1, int y1, int x2, int y2) {
-        int rslMinus1 = Point.minus(x2, x1);
-        int rslMinus2 = Point.minus(y2, y1);
-        double rslPow1 = Math.pow(rslMinus1, 2);
-        double rslPow2 = Math.pow(rslMinus2, 2);
-        double rslPlus = Point.plus(rslPow1, rslPow2);
-        double rsl = Math.sqrt(rslPlus);
-        return rsl;
+        return Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
     }
 
     public static void main(String[] args) {
