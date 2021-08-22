@@ -1,26 +1,11 @@
 package ru.job4j.condition;
 
 public class SqArea {
-    public static double plus(double a, double b) {
-        double rsl = a + b;
-        return rsl;
-    }
 
-    public static double div(double a, double b) {
-        double rsl = a / b;
-        return rsl;
-    }
-
-    public static double mult(double a, double b) {
-        double rsl = a * b;
-        return rsl;
-    }
 
     public static double square(double p, double k) {
-        double h = SqArea.div(p, SqArea.mult(2, SqArea.plus(k, 1)));
-        double L = SqArea.mult(h, k);
-        double rsl = SqArea.mult(L, h);
-        return rsl;
+        double h = p / (2 * (k + 1));
+        return Math.pow(h, 2) * k;
     }
 
     public static void main(String[] args) {
