@@ -31,4 +31,13 @@ public class FindLoopTest {
         int expected = 2;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenArrayHas20ThenMinus1() {
+        int[] data = {9, 10, 18, 21, 30};
+        int el = 20;
+        int result = FindLoop.indexOf(data, el);
+        int expected = -1;
+        Assert.assertEquals(expected, result);
+    }
 }
