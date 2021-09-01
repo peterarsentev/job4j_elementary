@@ -6,11 +6,24 @@ import org.junit.Assert;
 public class FindLoopTest {
 
     @Test
-    public void whenArrayHas5Then0() {
-        int[] data = {5, 4, 3, 2};
-        int el = 5;
-        int result = FindLoop.indexOf(data, el);
-        int expected = 0;
+    public void whenArrayHas250Then8() {
+        int[] data = {5, 4, 3, 2, 102, 825, 420, 300, 250};
+        int el = 250;
+        int start = 4;
+        int finish = 8;
+        int result = FindLoop.indexOf1(data, el, start, finish);
+        int expected = 8;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenArrayHas99Then() {
+        int[] data = {5, 4, 3, 2, 102, 825, 420, 300, 250};
+        int el = 99;
+        int start = 2;
+        int finish = 8;
+        int result = FindLoop.indexOf1(data, el, start, finish);
+        int expected = -1;
         Assert.assertEquals(expected, result);
     }
 
