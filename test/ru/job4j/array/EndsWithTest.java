@@ -24,8 +24,8 @@ public class EndsWithTest {
     @Test
     public void whenNotEndWithThenFalse() {
         char[] word = {'S', 'e', 'p', 't', 'e'};
-        char[] post = {'l', 'p', 't', 'e'};
+        char[] post = {'l', 'l', 'S', 'e', 'p', 't', 'e'};
         boolean result = EndsWith.endsWith(word, post);
-        Assert.assertFalse(result);
+        Assert.assertTrue(result);
     }
 }
