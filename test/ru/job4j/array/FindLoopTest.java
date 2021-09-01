@@ -7,7 +7,7 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHas250Then8() {
-        int[] data = {5, 4, 3, 2, 102, 825, 420, 300, 250};
+        int[] data = {5, 4, 3, 2, 101, 111, 420, 105, 250};
         int el = 250;
         int start = 4;
         int finish = 8;
