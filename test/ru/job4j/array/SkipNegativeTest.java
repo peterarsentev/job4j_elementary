@@ -35,4 +35,24 @@ public class SkipNegativeTest {
         };
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenArrayRow5AndColumnNotEquals() {
+        int[][] array = {
+                {1, 8, 800, 120, 250},
+                {-5, 2, 5},
+                {1, -20, -1, -4},
+                {18, 21, 26, 87},
+                {10, 5, 5, 10}
+        };
+        int[][] result = SkipNegative.skip(array);
+        int[][] expected = {
+                {1, 8, 800, 120, 250},
+                {0, 2, 5},
+                {1, 0, 0, 0},
+                {18, 21, 26, 87},
+                {10, 5, 5, 10}
+        };
+        Assert.assertArrayEquals(expected, result);
+    }
 }
