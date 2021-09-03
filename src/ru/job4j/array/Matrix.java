@@ -7,8 +7,7 @@ public class Matrix {
         int[][] matrix = new int[size][size];
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                    matrix = new int[row][cell];
-                    matrix[row][cell] = (row + 1) * (cell + 1);
+                matrix[row][cell] = (row + 1) * (cell + 1);
                 }
             }
         return matrix;
@@ -16,7 +15,7 @@ public class Matrix {
 
     public static void main(String[] args) {
         Matrix.multiple(5);
-        System.out.println(Matrix.multiple(5));
+        String arrayString = Arrays.deepToString(Matrix.multiple(5));
+        System.out.println(arrayString);
     }
 }
-

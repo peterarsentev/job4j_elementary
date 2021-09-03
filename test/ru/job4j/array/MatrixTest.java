@@ -5,12 +5,13 @@ import org.junit.Assert;
 
 public class MatrixTest {
     @Test
-    public void when2on2() {
-        int size = 2;
+    public void when3on3() {
+        int size = 3;
         int[][] result = Matrix.multiple(size);
         int[][] expected = {
-                {1, 2},
-                {2, 4}
+                {1, 2, 3},
+                {2, 4, 6},
+                {3, 6, 9}
         };
         Assert.assertArrayEquals(expected, result);
     }
