@@ -7,15 +7,14 @@ public class Matrix {
         int[][] matrix = new int[size][size];
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                matrix[row][cell] = (row + 1) * (cell + 1);
-                }
+            matrix[row][cell] = (row + 1) * (cell + 1);
+            }
             }
         return matrix;
     }
 
     public static void main(String[] args) {
-        Matrix.multiple(5);
-        String arrayString = Arrays.deepToString(Matrix.multiple(5));
+        String arrayString = Arrays.deepToString(Matrix.multiple(3));
         System.out.println(arrayString);
     }
 }
