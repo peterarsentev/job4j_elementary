@@ -1,8 +1,7 @@
-package ru.job4j;
+package ru.job4j.array;
 
 import org.junit.Test;
 import org.junit.Assert;
-import ru.job4j.array.MatrixCheck;
 
 public class MatrixCheckTest {
 
@@ -16,6 +15,18 @@ public class MatrixCheckTest {
         int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         Assert.assertTrue(result);
+    }
+
+    @Test
+    public void whenHasMonoHorizontal1() {
+        char[][] input = {
+                {' ', ' ', ' '},
+                {'X', 'X', 'X'},
+                {' ', ' ', ' '},
+        };
+        int row = 2;
+        boolean result = MatrixCheck.monoHorizontal(input, row);
+        Assert.assertFalse(result);
     }
 
     @Test
