@@ -35,9 +35,9 @@ public class MachineTest {
     @Test
     public void when50by32() {
         int money = 50;
-        int price = 32;
+        int price = 33;
         int[] result = Machine.change(money, price);
-        int[] expected = {10, 5, 2, 1};
+        int[] expected = {10, 5, 2};
         Assert.assertArrayEquals(expected, result);
     }
 }
