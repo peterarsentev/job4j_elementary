@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.math;
 
 public class SqArea {
     public static double square(double p, double k) {

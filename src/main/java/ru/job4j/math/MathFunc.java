@@ -1,14 +1,12 @@
-package ru.job4j;
+package ru.job4j.math;
 
 public class MathFunc {
     public static int func1(int x) {
-        int y = x * x + 1;
-        return y;
+        return x * x + 1;
     }
 
     public static int func2(int x) {
-        int y = x * 18;
-        return y;
+        return x * 18;
     }
 
     public static void main(String[] args) {
