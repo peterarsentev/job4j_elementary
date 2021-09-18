@@ -5,9 +5,9 @@ import static java.lang.Math.pow;
 
 public class Point {
 
-    private final int x;
+    private int x;
 
-    private final int y;
+    private int y;
 
     public Point(int first, int second) {
         this.x = first;
