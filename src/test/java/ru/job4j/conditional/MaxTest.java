@@ -1,8 +1,7 @@
-package job4j.conditional;
+package ru.job4j.conditional;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.conditional.Max;
 
 public class MaxTest {
 
