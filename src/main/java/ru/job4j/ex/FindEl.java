@@ -1,7 +1,7 @@
 package ru.job4j.ex;
 
 public class FindEl {
-    public static void indexOf(String[] value, String key) throws ElementNotFoundException {
+    public static int indexOf(String[] value, String key) throws ElementNotFoundException {
         int rsl = -1;
         for (int el = 0; el < value.length; el++) {
             if (value[el].equals(key)) {
@@ -12,6 +12,7 @@ public class FindEl {
         if (rsl == -1) {
         throw new ElementNotFoundException("Element could not be found");
         }
+        return rsl;
     }
 
     public static void main(String[] args) {
