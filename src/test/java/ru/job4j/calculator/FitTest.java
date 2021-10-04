@@ -21,6 +21,7 @@ public class FitTest {
         Assert.assertEquals(expected, out, 0.01);
 
     }
+
     @Test
     public void whenWoman160Then57() {
         short in = 160;
