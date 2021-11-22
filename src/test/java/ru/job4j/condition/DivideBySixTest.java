@@ -5,6 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+/**
+ * Деление на 6 тесты
+ */
 public class DivideBySixTest {
 
     @Test

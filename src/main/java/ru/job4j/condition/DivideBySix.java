@@ -1,5 +1,9 @@
 package ru.job4j.condition;
 
+/**
+ * Деление на 6
+ */
+
 public class DivideBySix {
     public static String checkNumber(int number) {
         String rsl;
