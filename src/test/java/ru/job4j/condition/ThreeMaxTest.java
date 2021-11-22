@@ -5,6 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+/**
+ * Определение большего числа из трех - тесты
+ */
 public class ThreeMaxTest {
 
     @Test

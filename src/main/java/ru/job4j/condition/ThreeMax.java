@@ -1,5 +1,8 @@
 package ru.job4j.condition;
 
+/**
+ * Определение большего числа из трех
+ */
 public class ThreeMax {
     public static int max(int first, int second, int third) {
         int result = first;
