@@ -3,7 +3,6 @@ package ru.job4j.loop;
 /**
  * 5.0. Цикл for. Определение. [#3572]
  */
-
 public class LoopFor {
     public static void main(String[] args) {
         int i;
