@@ -28,5 +28,4 @@ public class Counter {
         System.out.println(sumByEven(-108, -100));
         System.out.println(sumByEven(114, 299));
     }
-
 }
