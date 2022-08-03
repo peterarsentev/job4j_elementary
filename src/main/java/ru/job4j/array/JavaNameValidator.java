@@ -5,11 +5,11 @@ public class JavaNameValidator {
     public static boolean isNameValid(String name) {
         boolean result = false;
         if (!name.isEmpty() && isLowerLatinLetter(name.charAt(0))) {
-            for (char n : name.toCharArray()) {
-                if (Character.isDigit(Character.codePointAt(name.toCharArray(), n))
-                        || isSpecialSymbol(Character.codePointAt(name.toCharArray(), n))
-                        || isUpperLatinLetter(Character.codePointAt(name.toCharArray(), n))
-                        || isLowerLatinLetter(Character.codePointAt(name.toCharArray(), n))) {
+            for (int i = 1; i < name.length(); i++) {
+                if (Character.isDigit(name.charAt(i))
+                        || isSpecialSymbol(name.charAt(i))
+                        || isUpperLatinLetter(name.charAt(i))
+                        || isLowerLatinLetter(name.charAt(i))) {
                     result = true;
                 }
             }
