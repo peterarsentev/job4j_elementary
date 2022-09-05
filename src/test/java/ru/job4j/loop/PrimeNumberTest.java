@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
 import org.junit.jupiter.api.Test;
-import static org.assert.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class PrimeNumberTest {
     @Test
