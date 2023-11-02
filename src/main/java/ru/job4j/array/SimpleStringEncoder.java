@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 public class SimpleStringEncoder {
+
     public static String encode(String input) {
         String result = "";
         char symbol = input.charAt(0);
@@ -8,12 +9,13 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (symbol == input.charAt(i)) {
                 count++;
+            } else if (symbol != input.charAt(i) || symbol == input.charAt(input.length() - 1)) {
+                result = count == 1 ? result + symbol : result + symbol + count;
                 symbol = input.charAt(i);
-            } else {
-                result = result + symbol + count;
                 count = 1;
             }
         }
+        result = count == 1 ? result + symbol : result + symbol + count;
         return result;
     }
 }
