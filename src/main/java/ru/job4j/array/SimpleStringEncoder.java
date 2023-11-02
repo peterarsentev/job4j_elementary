@@ -9,7 +9,7 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (symbol == input.charAt(i)) {
                 count++;
-            } else if (symbol != input.charAt(i) || symbol == input.charAt(input.length() - 1)) {
+            } else {
                 result = count == 1 ? result + symbol : result + symbol + count;
                 symbol = input.charAt(i);
                 count = 1;

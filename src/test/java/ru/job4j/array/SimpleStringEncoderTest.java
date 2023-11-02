@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class SimpleStringEncoderTest {
-
     @Test
     void whenStringaaabbcThenResulta3b2c() {
         String input = "aaabbc";
