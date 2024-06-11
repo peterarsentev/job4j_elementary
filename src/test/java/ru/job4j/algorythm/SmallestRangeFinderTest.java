@@ -29,4 +29,12 @@ public class SmallestRangeFinderTest {
         int[] expectedRange = null;
         assertThat(SmallestRangeFinder.findSmallestRange(nums, k)).isEqualTo(expectedRange);
     }
+
+    @Test
+    public void whenNotFound2() {
+        int[] nums = {1, 2, 3, 3};
+        int k = 10;
+        int[] expectedRange = null;
+        assertThat(SmallestRangeFinder.findSmallestRange(nums, k)).isEqualTo(expectedRange);
+    }
 }
